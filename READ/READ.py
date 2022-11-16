@@ -17,6 +17,7 @@ def read_table():
         cursor.execute('SELECT * FROM estudiantes')
         #cursor.execute('SELECT COUNT(*) FROM estudiantes')
         #cursor.execute('SELECT * FROM estudiantes')
+        #cursor.excecute('SELECT * FROM estudiantes WHERE numero_lista > 10 AND numero_lista < 1' )
         result = cursor.fetchall()
         print(result)
         

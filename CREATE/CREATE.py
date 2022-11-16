@@ -22,6 +22,9 @@ def crear_database():
     except:
         print('No se pudo crear la base de datos')
 
+
+
+def crear_tabla():
     #CREACION TABLA
     try:
         conexion = mysql.connector.connect(
@@ -45,5 +48,5 @@ def crear_database():
 
 if __name__ == '__main__':
     print(crear_database())
-        
+    print(crear_tabla())
 

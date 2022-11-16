@@ -5,7 +5,6 @@ import mysql.connector
 def drop_databse():
     try:
         #eliminar base de datos
-        
         #Conectamos a la base de datos
         conexion = mysql.connector.connect(
             host = 'localhost',
@@ -35,6 +34,7 @@ def drop_table():
             password = 'Cespedes2003',
             database = 'escuela'
         )
+        
         #SOLICITUD
         cursor = conexion.cursor()
         cursor.execute('DROP TABLE IF EXISTS estudiantes')
@@ -70,6 +70,7 @@ def drop_column():
         print('No se pudo eliminar la columna')
         
 
+#Eliminar una fila
 def drop_row():
     try:
         conexion  = mysql.connector.connect(
